@@ -18,7 +18,7 @@ public class TesteController {
     public String visualizarQuadra(@ModelAttribute("idUsuario") String idUsuario){
 
         try{
-            return "teste";
+            return "Vai dar certo";
 
         }catch (Exception e ){
             throw new ResponseStatusException(

@@ -30,6 +30,8 @@ public class PilaCoin implements Serializable {
     private byte[] assinaturaMaster;
     private String nonce; //utilizar precisão de 128 bits
 
+    private String status;
+
     public Long getId() {
         return id;
     }
@@ -76,5 +78,13 @@ public class PilaCoin implements Serializable {
 
     public void setNonce(String nonce) {
         this.nonce = nonce;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

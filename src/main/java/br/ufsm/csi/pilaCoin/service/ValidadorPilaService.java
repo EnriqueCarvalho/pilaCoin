@@ -90,9 +90,7 @@ public class ValidadorPilaService {
 
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-        String pilaJsonDoColega = objectMapper.writeValueAsString(pilaDoColega);
 
-        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         String pilaJsonValidado = objectMapper.writeValueAsString(pilaValidado);
 
         MessageDigest md = MessageDigest.getInstance("SHA-256");
